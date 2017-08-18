@@ -7,7 +7,11 @@ termite
 openssh
 sshfs
 borg
+rclone
 wget
+tor
+yubikey-personalization
+libu2f-host
 
 # Desktop Environments
 xorg
@@ -21,6 +25,10 @@ gvfs
 thunar-archive-plugin
 dmenu
 mousepad
+
+# Audio
+alsa-utils
+pulseaudio
 
 # Dev
 git

@@ -12,9 +12,7 @@ cp -aT /etc/skel/ /root/
 chmod 700 /root
 
 sed -i 's/#\(PermitRootLogin \).\+/\1yes/' /etc/ssh/sshd_config
-sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
 sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
-
 sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
@@ -23,4 +21,9 @@ systemctl enable pacman-init.service
 systemctl set-default multi-user.target
 
 # Set mirrors
-cp -f /etc/skel/mirrorlist /etc/pacman.d/mirrorlist
+cp -f /etc/custom/mirrorlist /etc/pacman.d/mirrorlist
+
+# Add default user account and set passwords
+useradd -s /usr/bin/zsh -m evert
+echo -en "password\npassword" | passwd evert
+echo -en "password\npassword" | passwd root
