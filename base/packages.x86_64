@@ -1,27 +1,38 @@
-networkmanager
-i3
+# System utilities
 acpi
+networkmanager
+network-manager-applet
+fuse
+termite
+openssh
+borg
+sshfs
+
+# Desktop Environments
 xorg
 xorg-server
-neovim
-ttf-dejavu
-chromium
-git
-openssh
-lynx
-dmenu
 xorg-xinit
+i3
+xfce4
 thunar
 thunar-volman
 gvfs
-termite
 thunar-archive-plugin
-evince
+dmenu
+mousepad
+
+# Dev
+git
+base-devel
 yasm
 gdb
-pepper-flash
-fuse
-borg
-xfce4
-base-devel
 tree
+neovim
+atom
+
+# Applications
+ttf-dejavu
+chromium
+evince
+pepper-flash
+lynx
