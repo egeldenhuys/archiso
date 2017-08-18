@@ -5,8 +5,9 @@ network-manager-applet
 fuse
 termite
 openssh
-borg
 sshfs
+borg
+wget
 
 # Desktop Environments
 xorg
@@ -36,3 +37,8 @@ chromium
 evince
 pepper-flash
 lynx
+calc
+
+# Virtualbox
+virtualbox-guest-modules-arch
+virtualbox-guest-utils
