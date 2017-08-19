@@ -19,6 +19,7 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 systemctl enable pacman-init.service
 systemctl set-default multi-user.target
+systemctl enable NetworkManager
 
 # Clone dotfiles
 mkdir -p /etc/skel/github
@@ -37,6 +38,5 @@ useradd -s /usr/bin/zsh -m evert
 echo -en "password\npassword" | passwd evert
 echo -en "password\npassword" | passwd root
 
-systemctl enable NetworkManager
 
 
