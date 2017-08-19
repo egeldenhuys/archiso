@@ -20,6 +20,15 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 systemctl enable pacman-init.service
 systemctl set-default multi-user.target
 
+# Clone dotfiles
+mkdir -p /etc/skel/github
+git -C /etc/skel/github https://github.com/egeldenhuys/dotfiles --depth=1
+
+# Install atom packages
+echo "Installing atom packages..."
+bash /etc/skel/github/dotfiles/install-atom-packages.sh
+mv /root/.atom /etc/skel/
+
 # Set mirrors
 cp -f /etc/custom/mirrorlist /etc/pacman.d/mirrorlist
 
@@ -27,3 +36,7 @@ cp -f /etc/custom/mirrorlist /etc/pacman.d/mirrorlist
 useradd -s /usr/bin/zsh -m evert
 echo -en "password\npassword" | passwd evert
 echo -en "password\npassword" | passwd root
+
+systemctl enable NetworkManager
+
+

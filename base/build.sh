@@ -14,8 +14,6 @@ arch=$(uname -m)
 verbose=""
 script_path=$(readlink -f ${0%/*})
 
-bash customise.sh
-
 _usage ()
 {
     echo "usage ${0} [options]"
