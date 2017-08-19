@@ -23,7 +23,7 @@ systemctl enable NetworkManager
 
 # Clone dotfiles
 mkdir -p /etc/skel/github
-git -C /etc/skel/github https://github.com/egeldenhuys/dotfiles --depth=1
+git -C /etc/skel/github clone https://github.com/egeldenhuys/dotfiles --depth=1
 
 # Install atom packages
 echo "Installing atom packages..."
