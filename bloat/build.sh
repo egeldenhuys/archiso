@@ -246,9 +246,6 @@ done
 
 mkdir -p ${work_dir}
 
-# Prepare for rebuild
-rm -fv ${work_dir}/build.make_*
-
 run_once make_pacman_conf
 
 # Do all stuff for each airootfs
