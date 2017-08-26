@@ -247,7 +247,7 @@ done
 mkdir -p ${work_dir}
 
 # Prepare for rebuild
-rm -v work/build.make_*
+rm -fv ${work_dir}/build.make_*
 
 run_once make_pacman_conf
 
