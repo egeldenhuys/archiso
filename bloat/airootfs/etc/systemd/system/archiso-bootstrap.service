@@ -1,0 +1,14 @@
+[Unit]
+Description=Executes the bootstrap on boot
+After=getty@tty1.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/init-bootstrap.sh
+StandardInput=tty
+TTYPath=/dev/tty1
+TTYReset=yes
+TTYVHangup=yes
+
+[Install]
+WantedBy=default.target
