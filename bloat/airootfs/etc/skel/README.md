@@ -2,6 +2,9 @@
 
 ## Bootstrap
 
+To start the bootstrap process execute the following as root.
+Make sure you have internet access.
+
 ```
-# init-bootstrap
+# source init-bootstrap
 ```
