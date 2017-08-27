@@ -21,7 +21,6 @@ sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 systemctl enable pacman-init.service
 systemctl set-default multi-user.target
 systemctl enable NetworkManager
-systemctl enable archiso-bootstrap.service
 
 # Set mirrors
 cp -f /etc/custom/mirrorlist /etc/pacman.d/mirrorlist

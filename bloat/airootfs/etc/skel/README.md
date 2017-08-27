@@ -1,0 +1,7 @@
+# Archiso
+
+## Bootstrap
+
+```
+# init-bootstrap
+```
