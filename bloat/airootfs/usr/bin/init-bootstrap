@@ -1,4 +1,4 @@
 #!/bin/bash
 
 git -C ~ clone https://github.com/egeldenhuys/archiso-bootstrap
-bash ~/archiso-bootstrap/init.sh
+source ~/archiso-bootstrap/init.sh
