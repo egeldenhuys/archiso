@@ -12,7 +12,6 @@ wget
 tor
 yubikey-personalization
 libu2f-host
-gnome-keyring
 
 # Desktop Environments
 xorg
