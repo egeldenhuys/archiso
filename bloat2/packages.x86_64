@@ -1,0 +1,53 @@
+# System utilities
+acpi
+networkmanager
+network-manager-applet
+fuse
+termite
+openssh
+sshfs
+borg
+rclone
+wget
+tor
+yubikey-personalization
+libu2f-host
+
+# Desktop Environments
+xorg
+xorg-server
+xorg-xinit
+i3
+xfce4
+thunar
+thunar-volman
+gvfs
+thunar-archive-plugin
+dmenu
+mousepad
+
+# Audio
+alsa-utils
+pulseaudio
+
+# Dev
+git
+base-devel
+yasm
+gdb
+tree
+neovim
+atom
+
+# Applications
+ttf-hack
+ttf-dejavu
+chromium
+evince
+pepper-flash
+lynx
+calc
+
+# Virtualbox
+virtualbox-guest-modules-arch
+virtualbox-guest-utils
