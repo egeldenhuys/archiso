@@ -9,6 +9,8 @@
 - Telegram
 - pacaur
 - Firefox Developer
+- atom with packages
+- `$ bootstrap` to apply patches to the live system
 
 #### Default Credentials
 - `arch`; `password`
