@@ -2,7 +2,10 @@
 
 set -e -u
 
-iso_name=archlinux
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+bash $DIR/import-scripts.sh
+
+iso_name=archlinux_bloat
 iso_label="ARCH_$(date +%Y%m)"
 iso_version=$(date +%Y.%m.%d)
 install_dir=arch
@@ -245,9 +248,6 @@ while getopts 'N:V:L:D:w:o:g:vh' arg; do
 done
 
 mkdir -p ${work_dir}
-
-# Prepare for rebuild
-rm -fv ${work_dir}/build.make_*
 
 run_once make_pacman_conf
 

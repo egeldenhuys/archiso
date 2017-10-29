@@ -12,6 +12,8 @@ wget
 tor
 yubikey-personalization
 libu2f-host
+wireshark-gtk
+gnome-keyring
 
 # Desktop Environments
 xorg
@@ -38,11 +40,13 @@ gdb
 tree
 neovim
 atom
+emacs
 
 # Applications
 ttf-hack
 ttf-dejavu
 chromium
+firefox
 evince
 pepper-flash
 lynx
