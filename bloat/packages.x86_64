@@ -47,10 +47,11 @@ ttf-hack
 ttf-dejavu
 chromium
 firefox
-evince
+okular
 pepper-flash
 lynx
 calc
+libreoffice
 
 # Virtualbox
 virtualbox-guest-modules-arch

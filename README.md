@@ -2,6 +2,9 @@
 - Archiso configs
 - https://wiki.archlinux.org/index.php/archiso
 
+## TODO
+- Checkout fixed version of dotfiles when generating image
+
 ## Features
 ### Bloat
 - Contains many packages
